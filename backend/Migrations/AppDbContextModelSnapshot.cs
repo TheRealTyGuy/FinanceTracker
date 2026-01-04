@@ -35,7 +35,7 @@ namespace MinimalApiSample.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Accounts");
+                    b.ToTable("Accounts", (string)null);
                 });
 
             modelBuilder.Entity("Models.Category", b =>
@@ -44,12 +44,12 @@ namespace MinimalApiSample.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("CategoryName")
+                    b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("Models.Transaction", b =>
@@ -79,7 +79,7 @@ namespace MinimalApiSample.Migrations
 
                     b.HasIndex("CategoryID");
 
-                    b.ToTable("Transactions");
+                    b.ToTable("Transactions", (string)null);
                 });
 
             modelBuilder.Entity("Models.User", b =>
@@ -105,7 +105,7 @@ namespace MinimalApiSample.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("Models.Account", b =>

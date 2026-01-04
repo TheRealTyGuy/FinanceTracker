@@ -1,5 +1,5 @@
 using Models;
-using DTOs;
+using DTOs.Categories;
 
 namespace Endpoints
 {
@@ -11,31 +11,33 @@ namespace Endpoints
             app.MapGet("/category/{id}", GetCategory);
         }
 
-        private static async Task<IResult> CreateCategory(CategoryDTO categoryDTO, AppDbContext db)
+        private static async Task<IResult> CreateCategory(CreateCategoryRequest request, AppDbContext db)
         {
-            var category = new Category
+            // EF entity
+            var categoryEntity = new Category
             {
-                CategoryName = categoryDTO.CategoryName
+                Name = request.Name
             };
 
-            db.Categories.Add(category);
+            // when this happens category above gets the id auto assigned
+            db.Categories.Add(categoryEntity);
             await db.SaveChangesAsync();
 
-            var responseCategory = new CategoryDTO
-            {
-                Id = category.Id,
-                CategoryName = category.CategoryName
-            };
-
-            // // Factory pattern
-            return TypedResults.Created($"/category/{category.Id}", responseCategory);
+            // Factory pattern
+            return TypedResults.Created(
+                $"/category/{categoryEntity.Id}", 
+                new CategoryResponse(
+                    categoryEntity.Id,
+                    categoryEntity.Name
+                )
+            );
         }
 
-        private static async Task<IResult> GetCategory(int id, AppDbContext db)
+        private static async Task<IResult> GetCategory(int requestId, AppDbContext db)
         {
-            return await db.Categories.FindAsync(id)
+            return await db.Categories.FindAsync(requestId)
                 is Category category
-                    ? TypedResults.Ok(new CategoryDTO(category))
+                    ? TypedResults.Ok(new CategoryResponse(category.Id, category.Name))
                     : TypedResults.NotFound();
         }
     }
