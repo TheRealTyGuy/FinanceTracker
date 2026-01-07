@@ -5,7 +5,7 @@ namespace Models
         public int Id { get; set; }
         
         public string? CurrencyType { get; set; }
-        public string? AccountName { get; set; }
+        public string? Name { get; set; }
 
         public int UserId { get; set; }
 
