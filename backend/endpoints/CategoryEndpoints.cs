@@ -7,9 +7,9 @@ namespace Endpoints
     {
         public static void AddCategoryEndpoints(this WebApplication app)
         {
-            app.MapPost("/category", CreateCategory).RequireAuthorization("todo:read-write");
-            app.MapGet("/category/{id}", GetCategory).RequireAuthorization("todo:read-write");
-            app.MapGet("/category", GetCategoryTEST).RequireAuthorization("todo:read-write");
+            app.MapPost("/category", CreateCategory);
+            app.MapGet("/category/{id}", GetCategory);
+            app.MapGet("/category", GetCategoryTEST);
         }
 
         private static async Task<IResult> CreateCategory(CreateCategoryRequest request, AppDbContext db)

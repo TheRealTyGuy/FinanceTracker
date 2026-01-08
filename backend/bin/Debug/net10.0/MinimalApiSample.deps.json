@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Google": "10.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.1",
-          "Microsoft.EntityFrameworkCore.InMemory": "10.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.1",
+          "Microsoft.EntityFrameworkCore.InMemory": "10.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "10.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "10.0.1",
           "Microsoft.IdentityModel.Tokens": "8.15.0",
@@ -42,6 +43,17 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "10.0.1.0",
+            "fileVersion": "10.0.125.57005"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.1"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
             "assemblyVersion": "10.0.1.0",
             "fileVersion": "10.0.125.57005"
           }
@@ -433,14 +445,14 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/10.0.0": {
+      "Microsoft.EntityFrameworkCore.InMemory/10.0.1": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.1"
         },
         "runtime": {
           "lib/net10.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.25.52411"
+            "assemblyVersion": "10.0.1.0",
+            "fileVersion": "10.0.125.57005"
           }
         }
       },
@@ -958,6 +970,13 @@
       "path": "microsoft.aspnetcore.authentication.jwtbearer/10.0.1",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.10.0.1.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Dljm38k9d36gMXvNuhNrevoh2hh9wp7z3wcWN21qesm37GToDhYtdMjyQzw4a2J+rTJ19io0FDb0HQBtQVo7rw==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/10.0.1",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.10.0.1.nupkg.sha512"
+    },
     "Microsoft.Build/17.7.2": {
       "type": "package",
       "serviceable": true,
@@ -1049,12 +1068,12 @@
       "path": "microsoft.entityframeworkcore.design/10.0.1",
       "hashPath": "microsoft.entityframeworkcore.design.10.0.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.InMemory/10.0.0": {
+    "Microsoft.EntityFrameworkCore.InMemory/10.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-06yN/NR9bOM7GjUR1hnucciiK8nrr0bs7MP6RKCdHQp5BCcR4P9zemtlz6aznJms1xvybPzKwESTtoC6XMAPQQ==",
-      "path": "microsoft.entityframeworkcore.inmemory/10.0.0",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.10.0.0.nupkg.sha512"
+      "sha512": "sha512-f0HNO4Hp80AJLGkv/gV95q9yrPJ7CPfCjNq5trcLsXH75GurM/62D4m2YyXmkyQfeT4MRFXZSBPdhDBOx1CTQQ==",
+      "path": "microsoft.entityframeworkcore.inmemory/10.0.1",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.10.0.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/10.0.1": {
       "type": "package",
