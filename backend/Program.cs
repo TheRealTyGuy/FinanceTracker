@@ -25,12 +25,8 @@ if (app.Environment.IsDevelopment())
 
 app.MapIdentityApi<User>();
 
-app.MapGet("/testCategory", (HttpContext httpContext) =>
-{
-    return new CreateCategoryRequest("hey");
-})
-.WithName("GetTestCategory")
-.RequireAuthorization();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.AddAccountEndpoints();
 app.AddCategoryEndpoints();

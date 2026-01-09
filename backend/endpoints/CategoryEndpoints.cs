@@ -7,9 +7,8 @@ namespace Endpoints
     {
         public static void AddCategoryEndpoints(this WebApplication app)
         {
-            app.MapPost("/category", CreateCategory);
-            app.MapGet("/category/{id}", GetCategory);
-            app.MapGet("/category", GetCategoryTEST);
+            app.MapPost("/category", CreateCategory).RequireAuthorization();
+            app.MapGet("/category/{id}", GetCategory).RequireAuthorization();
         }
 
         private static async Task<IResult> CreateCategory(CreateCategoryRequest request, AppDbContext db)
@@ -37,14 +36,6 @@ namespace Endpoints
         private static async Task<IResult> GetCategory(int id, AppDbContext db)
         {
             return await db.Categories.FindAsync(id)
-                is Category category
-                    ? TypedResults.Ok(new CategoryResponse(category.Id, category.Name))
-                    : TypedResults.NotFound();
-        }
-
-        private static async Task<IResult> GetCategoryTEST(AppDbContext db)
-        {
-            return await db.Categories.FindAsync(1)
                 is Category category
                     ? TypedResults.Ok(new CategoryResponse(category.Id, category.Name))
                     : TypedResults.NotFound();
