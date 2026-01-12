@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/jimmybob/repos/FinanceTracker/backend/MinimalApiSample.csproj": {}
+    "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\MinimalApiSample.csproj": {}
   },
   "projects": {
-    "/home/jimmybob/repos/FinanceTracker/backend/MinimalApiSample.csproj": {
+    "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\MinimalApiSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jimmybob/repos/FinanceTracker/backend/MinimalApiSample.csproj",
+        "projectUniqueName": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\MinimalApiSample.csproj",
         "projectName": "MinimalApiSample",
-        "projectPath": "/home/jimmybob/repos/FinanceTracker/backend/MinimalApiSample.csproj",
-        "packagesPath": "/home/jimmybob/.nuget/packages/",
-        "outputPath": "/home/jimmybob/repos/FinanceTracker/backend/obj/",
+        "projectPath": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\MinimalApiSample.csproj",
+        "packagesPath": "C:\\Users\\Ty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/jimmybob/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -99,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

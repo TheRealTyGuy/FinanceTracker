@@ -1,5 +1,5 @@
 using Models;
-using DTOs;
+using DTOs.Transactions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Endpoints
@@ -9,6 +9,11 @@ namespace Endpoints
         public static void AddTransactionEndpoints(this WebApplication app)
         {
             
+        }
+
+        public static async Task<IResult> CreateTransaction(CreateTransactionRequest request, AppDbContext db)
+        {
+            return TypedResults.Ok();
         }
     }
 }
