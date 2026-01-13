@@ -341,7 +341,7 @@ C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\staticwebasset
 C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\MinimalA.10226226.Up2Date
 C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\MinimalApiSample.genruntimeconfig.cache
 C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\ref\MinimalApiSample.dll
+C:\Users\Ty\Repositories\FinanceTracker\backend\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

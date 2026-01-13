@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\dtos\\accounts",
+    "\\dtos\\categories",
+    "\\dtos\\transactions"
   ],
-  "SelectedNode": "\\backend.sln",
   "PreviewInSolutionExplorer": false
 }

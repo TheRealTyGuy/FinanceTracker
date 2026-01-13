@@ -382,5 +382,27 @@
         "StatusCode": 400
       }
     ]
+  },
+  {
+    "ContainingType": "Endpoints.TransactionEndpoints",
+    "Method": "CreateTransaction",
+    "RelativePath": "transaction",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DTOs.Transactions.CreateTransactionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
