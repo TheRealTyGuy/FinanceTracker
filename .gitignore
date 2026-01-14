@@ -118,7 +118,7 @@ dist
 .dynamodb/
 
 # Database
-*.db
+*.db*
 
 # Firebase cache directory
 .firebase/

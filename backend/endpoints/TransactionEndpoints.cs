@@ -35,9 +35,7 @@ Models.Transaction.Account.get returned null.
                     transactionEntity.Id,
                     transactionEntity.Date,
                     transactionEntity.Description,
-                    transactionEntity.Amount,
-                    transactionEntity.Account.Name,
-                    transactionEntity.Category.Name
+                    transactionEntity.Amount
                     )
                 );
         }

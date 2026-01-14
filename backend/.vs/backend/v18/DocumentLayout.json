@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\endpoints\\transactionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:endpoints\\transactionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\endpoints\\categoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:endpoints\\categoryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\endpoints\\accountendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:endpoints\\accountendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\dtos\\categories\\createcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\categories\\createcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\endpoints\\transactionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:endpoints\\transactionendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\dtos\\categories\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\categories\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\dtos\\transactions\\transactionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\transactions\\transactionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:endpoints\\userendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\accounts\\createaccountrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\dtos\\categories\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\categories\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\dtos\\categories\\createcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\categories\\createcategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\dtos\\transactions\\createtransactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\transactions\\createtransactionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\dtos\\transactions\\transactionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|solutionrelative:dtos\\transactions\\transactionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CADC736-090B-0F11-7870-B60BA6A85AA9}|MinimalApiSample.csproj|c:\\users\\ty\\repositories\\financetracker\\backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +66,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CreateAccountRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\accounts\\CreateAccountRequest.cs",
               "RelativeDocumentMoniker": "dtos\\accounts\\CreateAccountRequest.cs",
@@ -78,12 +82,11 @@
               "RelativeToolTip": "dtos\\accounts\\CreateAccountRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:22:03.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:22:03.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AccountResponse.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\accounts\\AccountResponse.cs",
               "RelativeDocumentMoniker": "dtos\\accounts\\AccountResponse.cs",
@@ -91,12 +94,11 @@
               "RelativeToolTip": "dtos\\accounts\\AccountResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:22:01.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:22:01.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "CategoryResponse.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\categories\\CategoryResponse.cs",
               "RelativeDocumentMoniker": "dtos\\categories\\CategoryResponse.cs",
@@ -109,20 +111,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TransactionEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\endpoints\\TransactionEndpoints.cs",
               "RelativeDocumentMoniker": "endpoints\\TransactionEndpoints.cs",
               "ToolTip": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\endpoints\\TransactionEndpoints.cs",
               "RelativeToolTip": "endpoints\\TransactionEndpoints.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-12T05:44:35.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CategoryEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\endpoints\\CategoryEndpoints.cs",
               "RelativeDocumentMoniker": "endpoints\\CategoryEndpoints.cs",
@@ -135,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\models\\User.cs",
               "RelativeDocumentMoniker": "models\\User.cs",
@@ -143,25 +145,24 @@
               "RelativeToolTip": "models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:21:44.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:21:44.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AccountEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\endpoints\\AccountEndpoints.cs",
               "RelativeDocumentMoniker": "endpoints\\AccountEndpoints.cs",
               "ToolTip": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\endpoints\\AccountEndpoints.cs",
               "RelativeToolTip": "endpoints\\AccountEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBEAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-12T05:50:04.445Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UserEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\endpoints\\UserEndpoints.cs",
               "RelativeDocumentMoniker": "endpoints\\UserEndpoints.cs",
@@ -169,31 +170,30 @@
               "RelativeToolTip": "endpoints\\UserEndpoints.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:22:41.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:22:41.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "CreateCategoryRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\categories\\CreateCategoryRequest.cs",
               "RelativeDocumentMoniker": "dtos\\categories\\CreateCategoryRequest.cs",
               "ToolTip": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\categories\\CreateCategoryRequest.cs",
               "RelativeToolTip": "dtos\\categories\\CreateCategoryRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T05:22:06.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "TransactionResponse.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\transactions\\TransactionResponse.cs",
               "RelativeDocumentMoniker": "dtos\\transactions\\TransactionResponse.cs",
               "ToolTip": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\transactions\\TransactionResponse.cs",
               "RelativeToolTip": "dtos\\transactions\\TransactionResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T05:19:46.835Z",
               "EditorCaption": ""
@@ -208,8 +208,7 @@
               "RelativeToolTip": "models\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:18:43.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:18:43.789Z"
             },
             {
               "$type": "Document",
@@ -221,8 +220,7 @@
               "RelativeToolTip": "models\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:21:21.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:21:21.143Z"
             },
             {
               "$type": "Document",
@@ -234,12 +232,11 @@
               "RelativeToolTip": "models\\Account.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:20:30.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:20:30.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CreateTransactionRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ty\\Repositories\\FinanceTracker\\backend\\dtos\\transactions\\CreateTransactionRequest.cs",
               "RelativeDocumentMoniker": "dtos\\transactions\\CreateTransactionRequest.cs",
@@ -247,8 +244,7 @@
               "RelativeToolTip": "dtos\\transactions\\CreateTransactionRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T05:47:03.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T05:47:03.304Z"
             }
           ]
         }
