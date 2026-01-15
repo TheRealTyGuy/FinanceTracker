@@ -13,4 +13,4 @@ Still not finished — currently mostly backend API.
 
 ## Status
 
-🚧 Work in progress
+Work in progress
