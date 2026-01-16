@@ -66,12 +66,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 9,
@@ -106,8 +102,7 @@
               "RelativeToolTip": "dtos\\categories\\CategoryResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:18:40.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:18:40.078Z"
             },
             {
               "$type": "Document",
@@ -119,8 +114,7 @@
               "RelativeToolTip": "endpoints\\TransactionEndpoints.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAcwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T05:44:35.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T05:44:35.319Z"
             },
             {
               "$type": "Document",
@@ -157,8 +151,7 @@
               "RelativeToolTip": "endpoints\\AccountEndpoints.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBEAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T05:50:04.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T05:50:04.445Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "dtos\\categories\\CreateCategoryRequest.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:22:06.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:22:06.306Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "dtos\\transactions\\TransactionResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T05:19:46.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T05:19:46.835Z"
             },
             {
               "$type": "Document",
