@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FinanceTracker
 
 Learning project focused on building a backend API using ASP.NET Core Minimal APIs, with plans for a React (TypeScript) frontend.
