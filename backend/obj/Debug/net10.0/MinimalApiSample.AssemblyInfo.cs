@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MinimalApiSample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9d56a11ed4c48ad6f4fecc7deb2b004281fd6e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cbdb8554526f850d5e936103afac8f976d21eaf")]
 [assembly: System.Reflection.AssemblyProductAttribute("MinimalApiSample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MinimalApiSample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
