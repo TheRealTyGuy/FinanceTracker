@@ -1,7 +1,7 @@
 function About() {
     return (
         <div>
-            <h1>About page!</h1>
+            <h1 class="text-3xl font-bold underline" >About page!</h1>
         </div>
     );
 }
