@@ -177,3 +177,7 @@ dist-ssr
 # React Router
 /.react-router/
 /build/
+
+.vs
+bin/
+obj/
