@@ -3,8 +3,18 @@ using Endpoints;
 using Models;
 using DTOs.Categories;
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options => 
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy => 
+                      {
+                        policy.WithOrigins("http://localhost:5173")
+                      });
+});
 builder.Services.AddIdentityApiEndpoints<User>()
     .AddEntityFrameworkStores<AppDbContext>();
 
@@ -25,8 +35,10 @@ if (app.Environment.IsDevelopment())
 
 app.MapIdentityApi<User>();
 
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseCors(MyAllowSpecificOrigins);
+
+// app.UseAuthentication();
+// app.UseAuthorization();
 
 app.AddAccountEndpoints();
 app.AddCategoryEndpoints();
