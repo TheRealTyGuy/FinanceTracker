@@ -13,6 +13,8 @@ builder.Services.AddCors(options =>
                       policy => 
                       {
                         policy.WithOrigins("http://localhost:5173")
+                              .WithHeaders("Content-Type")
+                              .AllowAnyMethod();
                       });
 });
 builder.Services.AddIdentityApiEndpoints<User>()
@@ -37,8 +39,8 @@ app.MapIdentityApi<User>();
 
 app.UseCors(MyAllowSpecificOrigins);
 
-// app.UseAuthentication();
-// app.UseAuthorization();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.AddAccountEndpoints();
 app.AddCategoryEndpoints();
