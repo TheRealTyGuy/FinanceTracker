@@ -11,6 +11,16 @@ function Authentication() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ email, password });
+    fetch("http://localhost:5290/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password
+      })
+    });
   }
 
   return (
