@@ -1,9 +1,18 @@
 import { Link } from "react-router";
+import { useState } from "react";
 import EmailInput from "../components/EmailInput";
 import PasswordInput from "../components/PasswordInput";
 import AuthSubmitButton from "../components/AuthSubmitButton";
 
 function Authentication() {
+  const [ email, setEmail ] = useState("");
+  const [ password, setPassword ] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ email, password });
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-md flex flex-col items-center">
@@ -11,11 +20,19 @@ function Authentication() {
           Sign up
         </h1>
 
-        <div className="w-full space-y-4">
-          <EmailInput />
-          <PasswordInput />
+        <form onSubmit={handleSubmit} className="w-full space-y-4">
+          <EmailInput 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <PasswordInput 
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
           <AuthSubmitButton />
-        </div>
+        </form>
         
         <p className="mt-6 text-sm text-gray-600">
           Already have an account?{" "}

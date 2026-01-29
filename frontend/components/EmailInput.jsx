@@ -1,4 +1,4 @@
-function EmailInput() {
+function EmailInput({ value, onChange }) {
     return (
         <div>
             <label
@@ -10,6 +10,8 @@ function EmailInput() {
             <input
                 id="email"
                 name="email"
+                value={value}
+                onChange={onChange}
                 type="email"
                 autoComplete="email"
                 required
