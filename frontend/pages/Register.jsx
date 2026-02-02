@@ -9,6 +9,7 @@ function Authentication() {
   const [ password, setPassword ] = useState("");
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     fetch("http://localhost:5290/register", {
       method: "POST",
       headers: {

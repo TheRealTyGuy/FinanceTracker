@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { useState } from "react";
 import EmailInput from "../components/EmailInput";
 import PasswordInput from "../components/PasswordInput";
 import AuthSubmitButton from "../components/AuthSubmitButton";
@@ -7,9 +8,27 @@ function Authentication() {
   const [ email, setEmail ] = useState("");
   const [ password, setPassword ] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({ email, password})
+    try {
+      const response = await fetch("http://localhost:5290/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password
+        })
+      });
+
+      const data = await response.json();
+      console.log("Response data: ", data);
+
+      console.log("Status: ", response.status);
+    } catch (error) {
+      console.error("Error: ", error);
+    }
   }
 
   return (
@@ -20,8 +39,16 @@ function Authentication() {
         </h1>
 
         <form onSubmit={handleSubmit} className="w-full space-y-4">
-          <EmailInput />
-          <PasswordInput />
+          <EmailInput 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <PasswordInput 
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
           <AuthSubmitButton />
         </form>
 
