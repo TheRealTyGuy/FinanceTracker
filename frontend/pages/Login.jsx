@@ -4,6 +4,14 @@ import PasswordInput from "../components/PasswordInput";
 import AuthSubmitButton from "../components/AuthSubmitButton";
 
 function Authentication() {
+  const [ email, setEmail ] = useState("");
+  const [ password, setPassword ] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ email, password})
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-md flex flex-col items-center">
@@ -11,11 +19,11 @@ function Authentication() {
           Sign in
         </h1>
 
-        <div className="w-full space-y-4">
+        <form onSubmit={handleSubmit} className="w-full space-y-4">
           <EmailInput />
           <PasswordInput />
           <AuthSubmitButton />
-        </div>
+        </form>
 
         <p className="mt-6 text-sm text-gray-600">
           New user?{" "}
