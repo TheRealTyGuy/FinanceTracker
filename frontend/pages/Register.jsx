@@ -8,7 +8,10 @@ function Authentication() {
   const [ email, setEmail ] = useState("");
   const [ password, setPassword ] = useState("");
   const [ isSuccess, setIsSuccess ] = useState(false);
+  const [ countdown, setCountdown ] = useState(5);
   const navigate = useNavigate();
+
+// timer, settimeout for 1000 seconds every time 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,9 +28,14 @@ function Authentication() {
         })
       });
 
+      // setTimeout(())
       if (response.ok) {
         setIsSuccess(true);
-        setTimeout(() => navigate("/login"), 3000);
+        const timeoutLength = countdown;
+        while (countdown > 0) { 
+          setTimeout(() => setCountdown(countdown - 1000), timeoutLength);
+        }
+        navigate("/login")
       }
 
     } catch (error) {
@@ -38,10 +46,14 @@ function Authentication() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-md flex flex-col items-center">
-        {isSuccess ? (
-          <h1 className="text-3xl font-semibold text-gray-900">
-            Registration successful!
-          </h1>
+        {isSuccess ? ( <>
+            <h1 className="text-3xl font-semibold text-gray-900">
+              Registration successful!
+            </h1>
+            <h1 className="text-3xl font-semibold text-gray-900">
+              Returning to login in {countdown}
+            </h1>
+          </>
         ) : (
           <>
             <h1 className="mb-6 text-3xl font-semibold text-gray-900">
