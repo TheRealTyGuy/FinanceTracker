@@ -2,6 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using Endpoints;
 using Models;
 using DTOs.Categories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -13,8 +17,9 @@ builder.Services.AddCors(options =>
                       policy => 
                       {
                         policy.WithOrigins("http://localhost:5173")
-                              .WithHeaders("Content-Type")
-                              .AllowAnyMethod();
+                              .AllowAnyMethod()
+                              .AllowAnyHeader()
+                              .AllowCredentials();
                       });
 });
 builder.Services.AddIdentityApiEndpoints<User>()
@@ -25,6 +30,34 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseSqlite("Data source=finance.db"));
+
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                context.Token = context.Request.Cookies["access_token"];
+                return Task.CompletedTask;
+            }
+        };
+
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!)
+            ),
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"]
+        };
+    });
 
 builder.Services.AddAuthorization();
 
