@@ -4,7 +4,7 @@ import EmailInput from "../components/EmailInput";
 import PasswordInput from "../components/PasswordInput";
 import AuthSubmitButton from "../components/AuthSubmitButton";
 
-function Authentication() {
+function Register() {
   const [ email, setEmail ] = useState("");
   const [ password, setPassword ] = useState("");
   const navigate = useNavigate();
@@ -69,4 +69,4 @@ function Authentication() {
   );
 }
 
-export default Authentication;
+export default Register;

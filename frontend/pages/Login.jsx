@@ -4,7 +4,7 @@ import EmailInput from "../components/EmailInput";
 import PasswordInput from "../components/PasswordInput";
 import AuthSubmitButton from "../components/AuthSubmitButton";
 
-function Authentication() {
+function Login() {
   const [ email, setEmail ] = useState("");
   const [ password, setPassword ] = useState("");
 
@@ -22,9 +22,10 @@ function Authentication() {
         })
       });
 
-      const data = await response.json();
-      console.log("Response data: ", data);
-
+      const tokens = await response.json();
+      
+      sessionStorage.setItem("accessToken", tokens.accessToken);
+      
       console.log("Status: ", response.status);
     } catch (error) {
       console.error("Error: ", error);
@@ -67,4 +68,4 @@ function Authentication() {
   );
 }
 
-export default Authentication;
+export default Login;

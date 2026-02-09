@@ -1,11 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Endpoints;
 using Models;
-using DTOs.Categories;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -22,58 +17,32 @@ builder.Services.AddCors(options =>
                               .AllowCredentials();
                       });
 });
-builder.Services.AddIdentityApiEndpoints<User>()
-    .AddEntityFrameworkStores<AppDbContext>();
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseSqlite("Data source=finance.db"));
 
-builder.Services
-    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.Events = new JwtBearerEvents
-        {
-            OnMessageReceived = context =>
-            {
-                context.Token = context.Request.Cookies["access_token"];
-                return Task.CompletedTask;
-            }
-        };
-
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!)
-            ),
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"]
-        };
-    });
+builder.Services.AddIdentityApiEndpoints<User>()
+    .AddEntityFrameworkStores<AppDbContext>();
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.MapIdentityApi<User>();
-
 app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapIdentityApi<User>();
 
 app.AddAccountEndpoints();
 app.AddCategoryEndpoints();
